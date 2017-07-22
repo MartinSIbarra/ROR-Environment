@@ -65,7 +65,7 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-   config.vm.network "forwarded_port", guest: 3000, host: 3100
+   config.vm.network "forwarded_port", guest: 5000, host: 5000
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -74,7 +74,7 @@ Vagrant.configure(2) do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  config.vm.network "public_network"
+   config.vm.network "public_network"
 
 
   # Enable provisioning with a shell script. Additional provisioners such as
@@ -96,7 +96,9 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
 
   # Uncomment this to have access to the repo from outside the VM
-  #config.vm.synced_folder "src/", "/home/vagrant/workspace/"
+  config.vm.synced_folder "D:/workspace", "/home/vagrant/workspace",
+    mount_options: ["dmode=775,fmode=664"]
+
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
