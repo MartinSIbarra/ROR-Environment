@@ -1,5 +1,5 @@
 $script_ruby = <<-SHELL
-  RUBY_VERSION="2.2.3"
+  RUBY_VERSION="2.3.4"
   # Install ruby environment
   if ! type rvm >/dev/null 2>&1; then
     curl -sSL https://rvm.io/mpapis.asc | gpg --import -
@@ -41,7 +41,7 @@ $script_git = <<-SHELL
   chmod 600 ~/.ssh/id_*
   chmod 644 ~/.ssh/id_*.pub
 
-  rvm use 2.2.3
+  rvm use 2.3.4
 SHELL
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
@@ -110,7 +110,7 @@ Vagrant.configure(2) do |config|
     #vb.gui = true
 
     # Customize the amount of memory on the VM:
-    #vb.memory = "3072"
+    vb.memory = "2048"
   end
   #
   # View the documentation for the provider you are using for more
