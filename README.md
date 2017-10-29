@@ -1,5 +1,5 @@
 # ROR (Ruby On Rails) Environment
-Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Rails con un mínimo de intervención manual.
+Un Vagrantfile creado para comenzar un nuevo ambiente de desarrollo de Ruby on Rails con una mínima de intervención manual.
 
 ## Pasos para armar el ambiente de desarrollo.
 
@@ -15,15 +15,15 @@ Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Ra
   ```
   git clone https://github.com/MartinSIbarra/ROR-Environment.git [destino]
   ```
-  Se debe reemplazar [destino] por el nombre de la carpeta donde se quiere clonar el repositorio, usando una de los siguientes ejemplos: 
-  * Por ejemplo con */cygdrive/d/Tools/rails_vm* -> usando un path absoluto
-   ```
-   git clone https://github.com/MartinSIbarra/ROR-Environment.git /cygdrive/d/Tools/rails_vm
-   ```
-  * Por ejemplo con *rails_vm* -> usando un path relativo
-   ```
-   git clone https://github.com/MartinSIbarra/ROR-Environment.git rails_vm
-   ```
+  Se debe reemplazar [destino] por el nombre de la carpeta donde se quiere clonar el repositorio, utilizando los siguientes ejemplos como guía: 
+  * Por ejemplo con usando */cygdrive/d/Tools/rails_vm* -> donde se utiliza un path absoluto
+    ```
+    git clone https://github.com/MartinSIbarra/ROR-Environment.git /cygdrive/d/Tools/rails_vm
+    ```
+  * Por ejemplo con usando *rails_vm* -> donde se utiliza un path relativo
+    ```
+    git clone https://github.com/MartinSIbarra/ROR-Environment.git rails_vm
+    ```
   
 * Realizar la primera ejecucion de Vagrant
   
@@ -37,5 +37,5 @@ Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Ra
   vagrant up --provision
   ```
 ------------
- ### Links útiles:
+ ## Links útiles:
  * [Documentación de Vagrant](https://www.vagrantup.com/docs/index.html)
