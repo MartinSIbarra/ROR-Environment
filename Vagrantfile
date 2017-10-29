@@ -54,7 +54,7 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "RubyDevelopment"
+    vb.name = "ROR-Environment"
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
