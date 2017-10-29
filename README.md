@@ -11,10 +11,20 @@ Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Ra
   * Instalar [Cygwin](https://cygwin.com/install.html)
   * [Ver tutorial](https://github.com/MartinSIbarra/Cygwin-Init) para instalación de paquetes.
     
-* Clonar el siguiente repositorio (copiar y pegar)
+* Clonar el siguiente repositorio (copiar y pegar):
   ```
   git clone https://github.com/MartinSIbarra/ROR-Environment.git [destino]
   ```
+  Se debe reemplazar [destino] por el nombre de la carpeta donde se quiere clonar el repositorio, usando una de las siguientes formas: 
+  * */cygdrive/d/Tools/rails_vm* -> usando un path absoluto
+   ```
+   git clone https://github.com/MartinSIbarra/ROR-Environment.git /cygdrive/d/Tools/rails_vm
+   ```
+  * *rails_vm* -> usando un path relativo
+   ```
+   git clone https://github.com/MartinSIbarra/ROR-Environment.git rails_vm
+   ```
+  
 * Realizar la primera ejecucion de Vagrant
   
   Entrar a la carpeta "[destino]" y ejecutar el siguiente comando:
