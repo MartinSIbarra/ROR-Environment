@@ -12,9 +12,9 @@ Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Ra
   * [Ver tutorial](https://github.com/MartinSIbarra/Cygwin-Init) para instalación de paquetes.
     
 * Clonar el siguiente repositorio (copiar y pegar)
-```
-git clone https://github.com/MartinSIbarra/ROR-Environment.git <destino>
-```
+  ```
+  git clone https://github.com/MartinSIbarra/ROR-Environment.git <destino>
+  ```
 * Realizar la primera ejecucion de Vagrant
   
   Entrar a la carpeta <destino> y ejecutar el siguiente comando, al ser la primera vez que se inicia la maquina virtual se instalara el sistema operativo y las herramientas.
