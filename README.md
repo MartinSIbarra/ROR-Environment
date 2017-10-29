@@ -15,12 +15,12 @@ Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Ra
   ```
   git clone https://github.com/MartinSIbarra/ROR-Environment.git [destino]
   ```
-  Se debe reemplazar [destino] por el nombre de la carpeta donde se quiere clonar el repositorio, usando una de las siguientes formas: 
-  * */cygdrive/d/Tools/rails_vm* -> usando un path absoluto
+  Se debe reemplazar [destino] por el nombre de la carpeta donde se quiere clonar el repositorio, usando una de los siguientes ejemplos: 
+  * Por ejemplo con */cygdrive/d/Tools/rails_vm* -> usando un path absoluto
    ```
    git clone https://github.com/MartinSIbarra/ROR-Environment.git /cygdrive/d/Tools/rails_vm
    ```
-  * *rails_vm* -> usando un path relativo
+  * Por ejemplo con *rails_vm* -> usando un path relativo
    ```
    git clone https://github.com/MartinSIbarra/ROR-Environment.git rails_vm
    ```
