@@ -70,6 +70,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: $script_env, privileged: true
   config.vm.provision "shell", inline: $script_ruby, privileged: false
+  config.vm.provision "shell", inline: $script_terminal, privileged: false
 end
 
 $script_env = <<-SHELL
@@ -110,4 +111,8 @@ $script_ruby = <<-SHELL
 
   # setting ruby
   rvm --default use 2.3.4
+SHELL
+
+$script_terminal = <<-SHELL
+  curl -sSL https://raw.githubusercontent.com/MartinSIbarra/terminalrc/master/bin/shell_init_script.sh | bash
 SHELL
