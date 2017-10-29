@@ -13,11 +13,19 @@ Un Vagrantfile creado para comenzar un nuevo ambiente de desarrolo de Ruby on Ra
     
 * Clonar el siguiente repositorio (copiar y pegar)
   ```
-  git clone https://github.com/MartinSIbarra/ROR-Environment.git <destino>
+  git clone https://github.com/MartinSIbarra/ROR-Environment.git [destino]
   ```
 * Realizar la primera ejecucion de Vagrant
   
-  Entrar a la carpeta <destino> y ejecutar el siguiente comando, al ser la primera vez que se inicia la maquina virtual se instalara el sistema operativo y las herramientas.
+  Entrar a la carpeta "[destino]" y ejecutar el siguiente comando:
+  ```
+  vagrant up
+  ```
+  Al ser la primera vez que se inicia la maquina virtual se instala el sistema operativo y se aprovisionan las herramientas.
+  Para futuras ocasiones si se quiere ejecutar nuevamente el aprovisionamiento de la maquina virtual se debe ejecutar:
   ```
   vagrant up --provision
   ```
+------------
+ ### Links útiles:
+ * [Documentación de Vagrant](https://www.vagrantup.com/docs/index.html)
